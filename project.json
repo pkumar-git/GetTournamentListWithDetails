@@ -1,13 +1,11 @@
 {
   "name": "GetTournamentListWithDetails",
   "description": "Gets a list of tournaments with tournament details such as date, registration deadline, location etc",
-  "main": "Main.xaml",
+  "main": "GetAllTournamentDetails.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.10.3-preview]",
-    "UiPath.Mail.Activities": "[1.10.4]",
     "UiPath.System.Activities": "21.4.0-preview",
-    "UiPath.UIAutomation.Activities": "[21.4.1-preview]",
-    "USTALibrary": "[1.0.14]"
+    "USTALibrary": "[1.0.23]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -16,7 +14,9 @@
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -25,7 +25,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -43,8 +44,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "cd8c8b44-ec29-46ce-9532-1c66e72c5baa",
+      "filePath": "GetAllTournamentDetails.xaml",
+      "uniqueId": "c83fb07c-f5ca-47e5-94f0-963723a36201",
       "input": [],
       "output": []
     }
