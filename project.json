@@ -5,7 +5,7 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[2.10.3-preview]",
     "UiPath.System.Activities": "21.4.0-preview",
-    "USTALibrary": "[1.0.23]"
+    "USTALibrary": "[1.0.24]"
   },
   "webServices": [],
   "entitiesStores": [],
