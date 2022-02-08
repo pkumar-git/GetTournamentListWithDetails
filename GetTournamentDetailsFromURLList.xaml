@@ -153,6 +153,7 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Get tournaments details for all tournaments in URL list" sap:VirtualizedContainerService.HintSize="602.666666666667,2490.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -161,11 +162,7 @@
       <Variable x:TypeArguments="s:DateTime" Name="datetime" />
       <Variable x:TypeArguments="x:String" Name="filename" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\pdksa\Documents\Tournaments\USTA" Name="dataFolder" />
-      <Variable x:TypeArguments="s:String[]" Name="levels">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Level 1&quot;, &quot;Level 2&quot;, &quot;Level 3 Open&quot;, &quot;Level 3 Closed&quot;, &quot;Level 4 Open&quot;, &quot;Level 4 Closed&quot;, &quot;Level 5 Open&quot;, &quot;Level 5 Closed, &quot;?&quot;}" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;Level 1&quot;, &quot;Level 2&quot;, &quot;Level 3 Open&quot;, &quot;Level 3 Closed&quot;, &quot;Level 4 Open&quot;, &quot;Level 4 Closed&quot;, &quot;Level 5 Open&quot;, &quot;Level 5 Closed, &quot;?&quot;}]" Name="levels" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -263,7 +260,7 @@
                       <OutArgument x:TypeArguments="x:String">[tournamentLevel]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[tournamentName.Substring(0, tournamentName.IndexOf("-"c)).Trim]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[if (tournamentName.IndexOf("-"c) &gt;= 0, tournamentName.Substring(0, tournamentName.IndexOf("-"c)).Trim, "?")]</InArgument>
                     </Assign.Value>
                   </Assign>
                   <Assign DisplayName="Assign tournament name" sap:VirtualizedContainerService.HintSize="262.222222222222,60.4444444444444" sap2010:WorkflowViewState.IdRef="Assign_7">
@@ -271,7 +268,7 @@
                       <OutArgument x:TypeArguments="x:String">[cleanedTournamentName]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[tournamentName.Substring(tournamentName.IndexOf("-"c)+2)]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[if (tournamentName.IndexOf("-"c) &gt;= 0, tournamentName.Substring(tournamentName.IndexOf("-"c)+2), tournamentName)]</InArgument>
                     </Assign.Value>
                   </Assign>
                   <Assign DisplayName="Assign tournament status" sap:VirtualizedContainerService.HintSize="262.222222222222,60.4444444444444" sap2010:WorkflowViewState.IdRef="Assign_3">
