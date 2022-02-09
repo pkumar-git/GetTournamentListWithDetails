@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>905.333333333333,2555.55555555556</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>905.333333333333,2354.66666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -156,13 +156,13 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Get tournaments details for all tournaments in URL list" sap:VirtualizedContainerService.HintSize="602.666666666667,2490.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Get tournaments details for all tournaments in URL list" sap:VirtualizedContainerService.HintSize="602.666666666667,2289.77777777778" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_tournamentDetails" />
       <Variable x:TypeArguments="s:DateTime" Name="datetime" />
       <Variable x:TypeArguments="x:String" Name="filename" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\pdksa\Documents\Tournaments\USTA" Name="dataFolder" />
-      <Variable x:TypeArguments="s:String[]" Default="[{&quot;Level 1&quot;, &quot;Level 2&quot;, &quot;Level 3 Open&quot;, &quot;Level 3 Closed&quot;, &quot;Level 4 Open&quot;, &quot;Level 4 Closed&quot;, &quot;Level 5 Open&quot;, &quot;Level 5 Closed, &quot;?&quot;}]" Name="levels" />
+      <Variable x:TypeArguments="s:String[]" Default="[{&quot;Level 1&quot;, &quot;Level 2&quot;, &quot;Level 3 Open&quot;, &quot;Level 3 Closed&quot;, &quot;Level 4 Open&quot;, &quot;Level 4 Closed&quot;, &quot;Level 5 Open&quot;, &quot;Level 5 Closed&quot;}]" Name="levels" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -170,13 +170,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:BuildDataTable DataTable="[dt_tournamentDetails]" DisplayName="Build Data Table - tournament details" sap:VirtualizedContainerService.HintSize="560.888888888889,59.5555555555556" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Level&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;15&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Tournament_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;200&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Tournament_x0020_Location&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;200&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Tournament_x0020_Dates&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Registrations_x0020_Open_x003F_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Registration_x0020_Deadline&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;50&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Tournament_x0020_ID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Tournament_x0020_Page&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;300&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each tournament in tournament URL list" sap:VirtualizedContainerService.HintSize="560.888888888889,1944.88888888889" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[in_tournamentURL]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each tournament in tournament URL list" sap:VirtualizedContainerService.HintSize="560.888888888889,1744" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[in_tournamentURL]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="tournamentPage" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Get tournament details and add to data table" sap:VirtualizedContainerService.HintSize="525.333333333333,1809.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Get tournament details and add to data table" sap:VirtualizedContainerService.HintSize="525.333333333333,1608.44444444444" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="registrationDeadline">
                 <Variable.Default>
@@ -246,9 +246,9 @@
               </If.Then>
             </If>
             <ui:LogMessage DisplayName="Log Message - Tournament URL" sap:VirtualizedContainerService.HintSize="483.555555555556,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Retrieving tournament details for: &quot; + tournamentPage]" />
-            <TryCatch DisplayName="Try Catch - get the tournament details" sap:VirtualizedContainerService.HintSize="483.555555555556,649.777777777778" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch - get the tournament details" sap:VirtualizedContainerService.HintSize="483.555555555556,549.333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
-                <Sequence DisplayName="Read the tournament details " sap:VirtualizedContainerService.HintSize="304,416" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Read the tournament details " sap:VirtualizedContainerService.HintSize="304,315.555555555556" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -268,15 +268,7 @@
                       <OutArgument x:TypeArguments="x:String">[cleanedTournamentName]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[if (tournamentName.IndexOf("-"c) &gt;= 0, tournamentName.Substring(tournamentName.IndexOf("-"c)+2), tournamentName)]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <Assign DisplayName="Assign tournament status" sap:VirtualizedContainerService.HintSize="262.222222222222,60.4444444444444" sap2010:WorkflowViewState.IdRef="Assign_3">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[registrationStatus]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">Open</InArgument>
+                      <InArgument x:TypeArguments="x:String">[if (tournamentName.IndexOf("-"c) &gt;= 0, tournamentName.Substring(tournamentName.IndexOf("-"c)+1), tournamentName)]</InArgument>
                     </Assign.Value>
                   </Assign>
                 </Sequence>
@@ -342,34 +334,26 @@
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <If Condition="[(registrationStatus.Equals(&quot;&quot;) = False) And (registrationOpen &lt;&gt; True)]" DisplayName="If registration status is not open" sap:VirtualizedContainerService.HintSize="483.555555555556,445.333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[registrationOpen = True]" DisplayName="If registration status is open" sap:VirtualizedContainerService.HintSize="483.555555555556,407.111111111111" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="Set registration status and deadline " sap:VirtualizedContainerService.HintSize="304,253.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Sequence Set status to &quot;Open&quot; and add to list" sap:VirtualizedContainerService.HintSize="304,215.111111111111" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Assign 'Closed' to status" sap:VirtualizedContainerService.HintSize="262.222222222222,60.4444444444444" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign DisplayName="Assign tournament status" sap:VirtualizedContainerService.HintSize="262.222222222222,60.4444444444444" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[registrationStatus]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">Closed</InArgument>
+                      <InArgument x:TypeArguments="x:String">Open</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign DisplayName="Assign empty string to deadline" sap:VirtualizedContainerService.HintSize="262.222222222222,60.4444444444444" sap2010:WorkflowViewState.IdRef="Assign_4">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[registrationDeadline]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">-</InArgument>
-                    </Assign.Value>
-                  </Assign>
+                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{tournamentLevel, cleanedTournamentName, tournamentVenue, tournamentDates, registrationStatus, registrationDeadline, tournamentID, &quot;https://playtennis.usta.com&quot; + tournamentPage  }]" DataTable="[dt_tournamentDetails]" DisplayName="Add details to tournament details datatable" sap:VirtualizedContainerService.HintSize="262.222222222222,22.2222222222222" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                 </Sequence>
               </If.Then>
             </If>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{tournamentLevel, cleanedTournamentName, tournamentVenue, tournamentDates, registrationStatus, registrationDeadline, tournamentID, &quot;https://playtennis.usta.com&quot; + tournamentPage  }]" DataTable="[dt_tournamentDetails]" DisplayName="Add details to tournament details datatable" sap:VirtualizedContainerService.HintSize="483.555555555556,22.2222222222222" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
           </Sequence>
         </ActivityAction>
       </ui:ForEach.Body>
