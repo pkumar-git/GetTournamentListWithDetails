@@ -1,5 +1,5 @@
 {
-  "name": "GetTournamentListWithDetails",
+  "name": "USTAGetTournamentListWithDetails",
   "description": "Gets a list of tournaments with tournament details such as date, registration deadline, location etc",
   "main": "GetAllTournamentDetails.xaml",
   "dependencies": {
