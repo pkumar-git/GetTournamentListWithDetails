@@ -1,6 +1,6 @@
 # USTAGetTournamentListWithDetails
 
-This UiPath application retrieves USTA tournament details for every USTA tournament  from the USTA tournaments website. It retrieves details like tournament level, name, venue, deadline information etc and stores the details in an Excel sheet. The Excel file is saved in the C:\Users\pdksa\Documents\Tournaments\USTA folder.
+This UiPath application retrieves USTA tournament details for every USTA tournament  from the USTA tournaments website: https://playtennis.usta.com/tournaments. It retrieves details like tournament level, name, venue, deadline information etc and stores the details in an Excel sheet. The Excel file is saved in the C:\Users\pdksa\Documents\Tournaments\USTA folder.
 
 This application requires the latest USTALibrary package to be available (available on https://github.com/pkumar-git/). It uses Chrome browser to access the USTA website.
 
